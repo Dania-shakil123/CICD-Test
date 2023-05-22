@@ -28,4 +28,4 @@ jobs:
       - name: Installing surge on the VM
         run: npm install --global surge
       - name: Deploying the sample webpage to surge
-        run: surge ./ dani-firstwebcicd.surge.sh --token "1e79e75754d3f1780608237ce15a05e8"
+        run: surge ./ dani-firstwebcicd.surge.sh --token ${{ secrets.TOKEN }}
